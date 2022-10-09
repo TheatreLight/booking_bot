@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="html">
+<head>
+<title>Страница</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+
+    <header>           
+            <div class="header">
+            <img src="images/header.png">         
+           <!--  <a href="form.html" id="menu">Главная</a>
+            <a href="form0.html" id="menu">Рейтинг бронирований</a>
+            <a href="form0.html" id="menu">Список банов</a>
+            <a href="form0.html" id="menu">Отменить всё</a> 
+            <a href="form3.htm" id="menu">Выйти</a>
+           <form action="form3.htm"><input class="jss22" type="submit" value="Logout"></input></form> -->
+            </div>          
+    </header>
+
+<body class="main">
+<div class="catalog2">
+
+<div class="login1">
+  <h3 style="color: #D3D3D3">Меню</h3>
+  <ul>
+    <li style="color: rgb(68, 235, 153)"><a href="form_est.html" style="color: #D3D3D3" >Главное меню</a></li>
+    <li style="color: rgb(68, 235, 153)"><a href="form_est.html" style="color: #D3D3D3" >Пользователи</a></li>    
+    <li style="color: rgb(68, 235, 153)"><a href="form_book.html" style="color: #D3D3D3" >Бронирования</a></li>
+    <li style="color: rgb(68, 235, 153)"><a href="form_ob.html" style="color: #D3D3D3" >Объекты</a></li>
+    <li style="color: rgb(68, 235, 153)"><a href="form3.htm" style="color: #D3D3D3" >Выйти</a></li>
+  </ul>
+</div>
+
+<div class="iksweb">
+<body>
+<div>
+    
+    
+    <form class="fr" action="form_add_book.html" target="_blank">
+        <p><button>Добавить бронирование</button></p>
+    </form>
+    </div>
+<h2 class="fr">Список бронирований</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Поиск брони по имени.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:20%;">Имя объекта</th>
+    <th style="width:20%;">Тип</th>
+    <th style="width:20%;">Дата брони</th>
+    <th style="width:20%;">Время брони</th>
+    <th style="width:20%;">Действия</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>room</td>
+    <td>Дата брони</td>
+    <td>Время брони</td>
+    <td><form action="form_add_book.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbkop</td>
+    <td>room</td>
+    <td>Дата брони</td>
+    <td>Время брони</td>
+    <td><form action="form_add_book.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>room</td>
+    <td>Дата брони</td>
+    <td>Время брони</td>
+    <td><form action="form_add_book.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+  </tr>
+  <tr>
+    <td>Koniglich Essen</td>
+    <td>room</td>
+    <td>Дата брони</td>
+    <td>Время брони</td>
+    <td><form action="form_add_book.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>room</td>
+    <td>Дата брони</td>
+    <td>Время брони</td>
+    <td><form action="form_add_book.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>room</td>
+    <td>Дата брони</td>
+    <td>Время брони</td>
+    <td><form action="form_add_book.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>room</td>
+    <td>Дата брони</td>
+    <td>Время брони</td>
+    <td><form action="form_add_book.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+  </tr>
+  <tr>
+    <td>Paris specialites</td>
+    <td>room</td>
+    <td>Дата брони</td>
+    <td>Время брони</td>
+    <td><form action="form_add_book.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="html">
+<head>
+<title>Страница</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+
+    <header>           
+            <div class="header">
+            <img src="images/header.png">         
+           <!--  <a href="form.html" id="menu">Главная</a>
+            <a href="form0.html" id="menu">Рейтинг бронирований</a>
+            <a href="form0.html" id="menu">Список банов</a>
+            <a href="form0.html" id="menu">Отменить всё</a> 
+            <a href="form3.htm" id="menu">Выйти</a>
+           <form action="form3.htm"><input class="jss22" type="submit" value="Logout"></input></form> -->
+            </div>          
+    </header>
+
+<body class="main">
+<div class="catalog2">
+
+<div class="login1">
+  <h3 style="color: #D3D3D3">Меню</h3>
+  <ul>
+    <li style="color: rgb(68, 235, 153)"><a href="form_end.html" style="color: #D3D3D3" >Главное меню</a></li>
+    <li style="color: rgb(68, 235, 153)"><a href="form_end.html" style="color: #D3D3D3" >Пользователи</a></li>    
+    <li style="color: rgb(68, 235, 153)"><a href="form_book.html" style="color: #D3D3D3" >Бронирования</a></li>
+    <li style="color: rgb(68, 235, 153)"><a href="form_ob.html" style="color: #D3D3D3" >Объекты</a></li>
+    <li style="color: rgb(68, 235, 153)"><a href="form3.htm" style="color: #D3D3D3" >Выйти</a></li>
+  </ul>
+</div>
+
+<div class="iksweb">
+<div>
+    <div>
+        <form class="fr" action="" method="get">
+            <input class="find" name="s" onkeyup="myFunction()" id="myInput" placeholder="Введите логин пользователя" type="search">
+            <button type="submit">Поиск</button>
+        </form>
+    </div>
+    <div>
+    
+    
+    <form class="fr" action="form_add_user.html" target="_blank">
+        <p><button>Добавить пользователя</button></p>
+    </form>
+    </div>
+</div>
+<table class="table"  id="myTable">
+   <h3 class="fr">Список пользователей</h3>
+	<tbody>
+    
+		<tr class="header">
+			<td>№ п/п</td>
+			<td>логин</td>
+			<td>роль</td>
+			<td >действия</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>lena</td>
+			<td></td>
+			<td>
+        <form action="form_add_user.html" target="_blank">
+           <button>Edit</button>
+        </form>
+    </td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><form action="form_add_user.html" target="_blank">
+           <button>Edit</button>
+        </form>
+            </td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><form action="form_add_user.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>popcorn</td>
+			<td></td>
+			<td><form action="form_add_user.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><form action="form_add_user.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><form action="form_add_user.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+		</tr>
+        <tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><form action="form_add_user.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+		</tr>
+        <tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><form action="form_add_user.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+		</tr>
+        <tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><form action="form_add_user.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+		</tr>
+        <tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><form action="form_add_user.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+		</tr>
+        <tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><form action="form_add_user.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+		</tr>
+        <tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><form action="form_add_user.html" target="_blank">
+           <button>Edit</button>
+        </form></td>
+		</tr>
+     
+	</tbody>
+</table>
+</br>
+</br></br></br></br></br></br></br></br>
+</div>
+</div>
+
+<div class="footer">
+      
+    </div>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿@model IEnumerable<WebApplication_Vitalik.Models.Subject>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutInternal";
+}
+
+<h2>Список субъектов для бронирования</h2>
+<p><a asp-action="Create">Добавить объект</a></p>
+<table class="table table-striped table-bordered table-hover">
+    <tr><th>Название</th><th>Инфо</th><th>Этаж</th><th>Номер</th><th>Кампус</th><th>Тип</th><th>Секретность</th><th>Мин. период брони</th><th>Бан</th><th></th><th></th></tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.NameSubject</td>
+            <td>@item.Info</td>
+            <td>@item.Level</td>
+            <td>@item.NumberRoom</td>
+            <td>@item.Campus</td>
+            <td>@item.Type</td>
+            <td>@item.securType</td>
+            <td>@item.MinTime</td>
+            <td>@item.Block</td>
+            <td>
+                <a class="btn btn-default" asp-action="Edit" asp-controller="Subject" asp-route-id="@item.Id">Изменить</a>
+            </td>
+            <td>
+                <form asp-controller="Subject" asp-action="Delete" method="post" asp-route-id="@item.Id">
+                    <input class="btn btn-danger" type="submit" value="Удалить" />
+                </form>
+            </td>
+        </tr>
+    }
+</table>

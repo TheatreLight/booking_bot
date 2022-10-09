@@ -1,0 +1,26 @@
+stages:
+  - build
+  - ckeck_style
+  - test
+
+build_line:
+  stage: build
+  script:
+    - cd src/project
+    - make
+
+ccplint_line:
+  stage: ckeck_style
+  script:
+    - cd src/project
+    - make check_ccplint
+  allow_failure: false
+
+test_line:
+  stage: test
+  needs: ["build_line", "ccplint_line"]
+  script:
+    - cd src/project
+    - make test
+  allow_failure: false
+

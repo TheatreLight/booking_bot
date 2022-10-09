@@ -1,0 +1,46 @@
+﻿@model WebApplication_Vitalik.Models.User
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "_LayoutInternal";
+}
+
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserLogin" class="control-label"></label>
+                <input asp-for="UserLogin" class="form-control" />
+                <span asp-validation-for="UserLogin" class="text-danger"></span>
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+                <label asp-for="Campus" class="control-label"></label>
+                <select asp-for="Campus" class="form-control">
+                    <option value="1">Novosibirsk</option>
+                    <option value="2">Moskow</option>
+                    <option value="3">Kazan</option>
+                </select>
+                <label asp-for="Role" class="control-label"></label>
+                <select asp-for="Role" class="form-control">
+                    <option value="1">Абитуриент</option>
+                    <option value="2">Студент</option>
+                    <option value="3">Staff</option>
+                    <option value="4">Admin</option>
+                </select>
+                <label asp-for="Block" class="control-label"></label>
+                <input type="checkbox" asp-for="Block" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

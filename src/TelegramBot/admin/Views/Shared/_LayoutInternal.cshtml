@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewBag.Title - Bot Vitaly</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" type="text/css" href="~/css/css.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body class="main">
+    <header>
+        <div class="header">
+            <img src="/images/header.png">
+            <!--  <a href="form.html" id="menu">Главная</a>
+             <a href="form0.html" id="menu">Рейтинг бронирований</a>
+             <a href="form0.html" id="menu">Список банов</a>
+             <a href="form0.html" id="menu">Отменить всё</a>
+             <a href="form3.htm" id="menu">Выйти</a>
+            <form action="form3.htm"><input class="jss22" type="submit" value="Logout"></input></form> -->
+        </div>
+    </header>
+
+    <div class="catalog2">
+
+        <div class="login1">
+            <h3 style="color: #D3D3D3">Меню</h3>
+            <ul>
+                <li style="color: rgb(68, 235, 153)"><a href="/User" style="color: #D3D3D3">Главное меню</a></li>
+                <li style="color: rgb(68, 235, 153)"><a href="/User" style="color: #D3D3D3">Пользователи</a></li>
+                <li style="color: rgb(68, 235, 153)"><a href="/Booking" style="color: #D3D3D3">Бронирования</a></li>
+                <li style="color: rgb(68, 235, 153)"><a href="/Subject" style="color: #D3D3D3">Объекты</a></li>
+                <li style="color: rgb(68, 235, 153)"><a href="/" style="color: #D3D3D3">Выйти</a></li>
+            </ul>
+        </div>
+
+        <div style="flex: 1; padding: 15px;">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>

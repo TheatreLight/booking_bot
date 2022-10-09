@@ -1,0 +1,34 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build_line:
+  stage: build
+  script:
+    - cd src/project
+    - make
+  artifacts:
+    paths:
+      - src/project/telBotVitaly
+    expire_in: 30 day
+
+test_line:
+  stage: test
+  needs: ["build_line"]
+  script:
+    - cd src/project
+    - make test
+  allow_failure: false
+
+deploy_line:
+  stage: deploy
+  needs: ["test_line"]
+  when: manual
+  script:
+    - cd src/project
+    - make
+    - cd ../
+    - chmod +x run_deploy.sh
+    - ./run_deploy.sh
+  allow_failure: false

@@ -1,0 +1,91 @@
+.jss250
+{
+    width: 380px;
+    height: 250px;
+    display: flex;
+    padding: 45px;
+    position: relative;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.jss5
+{
+    display: flex;
+    padding: 56px;
+    position: relative;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: rgba(0, 0, 0, 0) linear-gradient(47.28deg, rgb(134, 27, 227) -13.58%, rgb(68, 235, 153) 150.46%) repeat scroll 0% 0%;
+}
+
+
+.jss82
+{
+align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: inherit;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.jss21 {
+
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  box-sizing: inherit;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.jss82
+{
+    align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.jss251
+{
+    padding-right: 50px;
+    font-size: 0.875rem;
+    font-family: "SB Sans Text", Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    color: #44EB99;
+cursor: pointer;
+text-decoration: none;
+}
+
+.jss252 {
+  display: inline-flex;
+  font-size: 14px;
+  font-style: normal;
+  align-items: center;
+  font-family: "SB Sans Display", Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: none;
+  width: 100%;
+  color: #8191A2;
+  cursor: default;
+pointer-events: none;
+  
+}
+
+.jss22
+{
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: space-between;
+  width: 100px;
+}
