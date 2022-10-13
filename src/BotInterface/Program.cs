@@ -14,7 +14,7 @@ namespace BotInterface
 {
     class Program
     { 
-        static ITelegramBotClient botClient = new TelegramBotClient("5650023738:AAFe2XezsfxD-znXXsuzOlhVYYWxYp3Jrik");
+        static ITelegramBotClient botClient = new TelegramBotClient("");
         public static string[] week = new string[7];
         public static string output;
 
